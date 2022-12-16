@@ -39607,7 +39607,7 @@ MonoBehaviour:
   slideYScale: 0.5
   cam: {fileID: 963194230}
   slideFov: 105
-  slideKey: 304
+  slideKey: 306
 --- !u!114 &1623225826
 MonoBehaviour:
   m_ObjectHideFlags: 0
