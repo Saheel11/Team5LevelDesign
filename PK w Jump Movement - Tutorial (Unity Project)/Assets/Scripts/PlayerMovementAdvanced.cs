@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovementAdvanced : MonoBehaviour
 {
@@ -118,6 +119,12 @@ public class PlayerMovementAdvanced : MonoBehaviour
         SpeedControl();
         StateHandler();
         TextStuff();
+
+        if(Input.GetKey(KeyCode.R))
+        {
+           
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
 
         // handle drag
         if (state == MovementState.walking || state == MovementState.sprinting || state == MovementState.crouching)
